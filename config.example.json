@@ -1,0 +1,33 @@
+{
+  "env_development": {
+    "server": {
+      "host": "127.0.0.1",
+      "port": 8443,
+      "ssl": {
+        "key": "/path/to/server.key",
+        "cert": "/path/to/server.crt"
+      }
+    },
+    "database": {
+      "name": "cointractme-dev",
+      "user": "",
+      "pass": "",
+      "nodes": [
+        {
+          "host": "127.0.0.1",
+          "port": "27017"
+        }
+      ]
+    },
+    "smtp": {
+      "user": "",
+      "pass": "",
+      "host": "",
+      "ssl": true
+    },
+    "bitpay": {
+      "secret": "/path/to/bitpay/api.key",
+      "pubkey": "/path/to/bitpay/api.pub"
+    }
+  }
+}

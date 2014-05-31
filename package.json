@@ -1,0 +1,39 @@
+{
+  "name": "cointract.me",
+  "description": "do work. track time. get coins.",
+  "homepage": "https://cointract.me",
+  "main": "lib/server/index.js",
+  "version": "0.0.1",
+  "author": "Gordon Hall <gordon@gordonwritescode.com>",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gordonwritescode/cointract.me.git"
+  },
+  "scripts": {
+    "start": "node lib/server/index.js"
+  },
+  "keywords": [
+    "bitcoin",
+    "contractor",
+    "freelancer",
+    "bitpay",
+    "task tracker"
+  ],
+  "dependencies": {
+    "underscore": "~1.6.0",
+    "async": "~0.9.0",
+    "passport": "~0.2.0",
+    "passport-hawk": "~0.2.0",
+    "express": "~4.4.0",
+    "mongoose": "~3.8.12",
+    "bitcore": "~0.1.21",
+    "socket.io": "~1.0.2",
+    "node-bitpay-client": "git+https://github.com/gordonwritescode/node-bitpay-client.git",
+    "cli-color": "~0.3.2"
+  },
+  "devDependencies": {
+    "should": "~4.0.0",
+    "mocha": "~1.20.0"
+  }
+}
