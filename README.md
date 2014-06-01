@@ -28,7 +28,7 @@ Run tests and fire up the server.
 
 ```
 ~# npm test
-~# npm start
+~# NODE_ENV=development npm start
 ```
 
 ## Creating Certificates

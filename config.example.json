@@ -1,12 +1,14 @@
 {
   "env_development": {
+    "debug": true,
     "server": {
       "host": "127.0.0.1",
       "port": 8443,
       "ssl": {
         "key": "/path/to/server.key",
         "cert": "/path/to/server.crt"
-      }
+      },
+      "sessionSecret": "keyboard cat"
     },
     "database": {
       "name": "cointractme-dev",
