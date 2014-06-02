@@ -22,10 +22,10 @@
       ]
     },
     "smtp": {
-      "user": "",
-      "pass": "",
-      "host": "",
-      "ssl": true
+      "user": "username",
+      "pass": "password",
+      "host": "smtp.gmail.com",
+      "port": 465
     },
     "bitpay": {
       "secret": "/path/to/bitpay/api.key",

@@ -1,0 +1,6 @@
+Thanks for joining Cointract.me! We just need to verify your email address and
+you can complete your profile and start earning coins!
+
+Paste the link below into your web browser to finish:
+
+https://{{server.host}}:{{server.port}}/verifications?code={{verificationCode}}
