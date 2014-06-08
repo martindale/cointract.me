@@ -8,7 +8,7 @@
         "key": "/path/to/server.key",
         "cert": "/path/to/server.crt"
       },
-      "sessionSecret": "keyboard cat"
+      "redirectPort": 8080
     },
     "database": {
       "name": "cointractme-dev",
@@ -30,6 +30,9 @@
     "bitpay": {
       "secret": "/path/to/bitpay/api.key",
       "pubkey": "/path/to/bitpay/api.pub"
+    },
+    "insight": {
+      "host": "test.insight.is"
     }
   }
 }
