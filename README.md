@@ -4,7 +4,8 @@ Cointract.me
 *Do work. Track time. Get coins.*
 
 Cointract.me is a collaborative task tracking app that allows you to post jobs,
-get hired, track time, and accept bitcoin! Payouts are facilitated using the
+get hired, track time, and accept bitcoin! Invoices are reconciled using the
+[Insight API](http://insight.is) and payouts may be facilitated using the 
 [BitPay API](https://bitpay.com/api).
 
 ## Quick Setup
