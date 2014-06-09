@@ -32,7 +32,10 @@
       "pubkey": "/path/to/bitpay/api.pub"
     },
     "insight": {
-      "host": "test.insight.is"
+      "host": "test.insight.is",
+      "port": 80,
+      "path": "/",
+      "verbose": true
     }
   }
 }
