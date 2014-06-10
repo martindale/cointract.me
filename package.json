@@ -41,7 +41,8 @@
     "handlebars": "~2.0.0-alpha.4",
     "socket.io-client": "^1.0.4",
     "request": "~2.36.0",
-    "qrcode": "~0.2.10"
+    "qrcode": "~0.2.10",
+    "pkgcloud": "~0.9.5"
   },
   "devDependencies": {
     "should": "~4.0.0",

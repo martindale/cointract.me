@@ -1,0 +1,5 @@
+A payment was applied to an invoice associated with the job "{{job.title}}".
+
+Paste the link below into your web browser to see the details:
+
+https://{{server.host}}:{{server.port}}/#/jobs/{{job._id}}

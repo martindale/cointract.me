@@ -36,6 +36,13 @@
       "port": 80,
       "path": "/",
       "verbose": true
+    },
+    "storage": {
+      "provider": "rackspace",
+      "username": "username",
+      "apiKey": "apikey",
+      "region": "IAD",
+      "container": "containername"
     }
   }
 }
