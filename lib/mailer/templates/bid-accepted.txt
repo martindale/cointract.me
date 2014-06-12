@@ -1,0 +1,5 @@
+A bid has been accepted for the job "{{job.title}}".
+
+Paste the link below into your web browser to start working!
+
+https://{{server.host}}:{{server.port}}/#/jobs/{{job._id}}

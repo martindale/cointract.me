@@ -1,6 +1,10 @@
 {
   "env_development": {
     "debug": true,
+    "payments": {
+      "price": 0.01,
+      "currency": "BTC"
+    },
     "server": {
       "host": "127.0.0.1",
       "port": 8443,
