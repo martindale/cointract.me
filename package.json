@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "node lib/server/index.js",
-    "test": "NODE_ENV=test mocha test/*"
+    "test": "mocha tests/*"
   },
   "keywords": [
     "bitcoin",
@@ -35,17 +35,18 @@
     "jade": "~1.3.1",
     "serve-favicon": "~2.0.0",
     "hat": "0.0.3",
-    "mongoose-types": "~1.0.3",
     "cookie-parser": "~1.1.0",
     "nodemailer": "~0.6.5",
     "handlebars": "~2.0.0-alpha.4",
     "socket.io-client": "^1.0.4",
     "request": "~2.36.0",
     "qrcode": "~0.2.10",
-    "pkgcloud": "~0.9.5"
+    "pkgcloud": "~0.9.5",
+    "mongoose-types": "~1.0.3"
   },
   "devDependencies": {
-    "should": "~4.0.0",
-    "mocha": "~1.20.0"
+    "should": "~4.0.4",
+    "mocha": "~1.20.0",
+    "mockgoose": "~1.10.0"
   }
 }
