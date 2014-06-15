@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "node lib/server/index.js",
-    "test": "mocha tests/*"
+    "test": "TEST=true mocha tests/*"
   },
   "keywords": [
     "bitcoin",
