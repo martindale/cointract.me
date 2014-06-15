@@ -4,7 +4,7 @@ var should     = require('should');
 
 mockgoose(mongoose);
 
-describe('User', function () {
+describe('User', function() {
 
   var util = require('../../lib/util');
   var User = require('../../lib/models/user');
