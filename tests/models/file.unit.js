@@ -46,21 +46,12 @@ describe('File', function() {
   describe('#edit', function() {
 
     it('should update the file note', function(done) {
-      file.edit(user1, {
+      file.edit({
         note: 'what a great night!'
       }, function(err, result) {
         should.not.exist(err);
         should.exist(result);
         result.note.should.equal('what a great night!');
-        done();
-      });
-    });
-
-    it('should not allow a user to edit another\'s file', function(done) {
-      file.edit(user2, {
-        note: 'what a great night!'
-      }, function(err, result) {
-        should.exist(err);
         done();
       });
     });

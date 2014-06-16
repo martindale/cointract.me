@@ -41,17 +41,8 @@ describe('Comment', function() {
 
   describe('#update', function() {
 
-    it('should not allow other users to update', function(done) {
-      comment.update(user2, {
-        content: 'all your comment are belong to me.'
-      }, function(err, result) {
-        should.exist(err);
-        done();
-      });
-    });
-
     it('should update the comment', function(done) {
-      comment.update(user1, {
+      comment.update({
         content: 'so tract. much coin. wow.'
       }, function(err, result) {
         should.not.exist(err);
