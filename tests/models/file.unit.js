@@ -69,7 +69,12 @@ describe('File', function() {
 
   describe('#destroy', function() {
 
-
+    it('should delete the file and file object', function(done) {
+      file.destroy(function(err) {
+        should.not.exist(err);
+        done();
+      });
+    });
 
   });
 
