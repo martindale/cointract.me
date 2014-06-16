@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "test": "TEST=true node_modules/mocha/bin/mocha tests/* --reporter nyan"
+    "test": "TEST=true node_modules/mocha/bin/mocha tests/* --reporter spec"
   },
   "keywords": [
     "bitcoin",
