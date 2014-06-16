@@ -2,7 +2,7 @@
   "env_development": {
     "debug": true,
     "payments": {
-      "enabled": true,
+      "enabled": false,
       "price": 0.01,
       "currency": "BTC"
     },
@@ -10,6 +10,7 @@
       "host": "127.0.0.1",
       "port": 8443,
       "ssl": {
+        "enabled": false,
         "key": "/path/to/server.key",
         "cert": "/path/to/server.crt"
       },
