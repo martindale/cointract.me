@@ -21,6 +21,7 @@ describe('Comment', function() {
         should.not.exist(err);
         should.exist(result);
         result.dateCreated.should.instanceOf(Date);
+        result.content.should.equal('so coin. much tract. wow.');
         comment = result;
         done();
       });
@@ -55,6 +56,7 @@ describe('Comment', function() {
       }, function(err, result) {
         should.not.exist(err);
         should.exist(result);
+        result.content.should.equal('so tract. much coin. wow.');
         done();
       });
     });
