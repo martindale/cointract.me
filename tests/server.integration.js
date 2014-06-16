@@ -1,5 +1,3 @@
-var mongoose   = require('mongoose');
-var mockgoose  = require('mockgoose');
 var should     = require('should');
 var config     = require('../lib/config');
 var request    = require('request');
