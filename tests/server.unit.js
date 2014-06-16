@@ -20,7 +20,7 @@ describe('Server', function() {
     },
     'http': {
       createServer: sinon.stub().returns({
-        listen: sinon.stub().callsArg(1)
+        listen: sinon.stub().callsArg(2)
       })
     }
   });
