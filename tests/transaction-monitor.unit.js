@@ -11,11 +11,7 @@ describe('TransactionMonitor', function() {
 
   var txid = '54c661ba7cee28107bdd20d9a30661bbb24fc08e26cd491b07cdbabac99ef3fa';
 
-  var monitor = new TransactionMonitor({
-    host: config.insight.host,
-    port: config.insight.port,
-    path: config.insight.path
-  });
+  var monitor = new TransactionMonitor({});
 
   describe('#getTransactionById', function() {
 
