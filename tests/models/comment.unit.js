@@ -11,11 +11,12 @@ describe('Comment', function() {
 
   var user1 = { _id: new mongoose.Types.ObjectId() };
   var user2 = { _id: new mongoose.Types.ObjectId() };
+  var job   = { _id: new mongoose.Types.ObjectId() };
 
   describe('#create', function() {
 
     it('should create a new comment', function(done) {
-      Comment.create(user1, {
+      Comment.create(user1, job, {
         content: 'so coin. much tract. wow.'
       }, function(err, result) {
         should.not.exist(err);
@@ -28,7 +29,7 @@ describe('Comment', function() {
     });
 
     it('should fail with an nonexistent regarding user', function(done) {
-      Comment.create(user1, {
+      Comment.create(user1, job, {
         content: 'how i mine for jobz?',
         regarding: user2._id
       }, function(err, result) {

@@ -20,13 +20,14 @@ describe('File', function() {
 
   var user1  = { _id: new mongoose.Types.ObjectId() };
   var user2  = { _id: new mongoose.Types.ObjectId() };
+  var job    = { _id: new mongoose.Types.ObjectId() };
   var file   = null;
   var stream = new require('stream').Readable();
 
   describe('#create', function() {
 
     it('should upload file stream and create a file object', function(done) {
-      File.create(user1, {
+      File.create(user1, job, {
         name: 'yourmom.jpg',
         visibility: 'public',
         note: 'what a good night!',

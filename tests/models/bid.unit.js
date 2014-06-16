@@ -71,9 +71,11 @@ describe('Bid', function() {
 
   });
 
-  describe.skip('#notify', function() {
+  describe('#notify', function() {
 
-
+    it.skip('should send email notification to job owner', function(done) {
+      
+    });
 
   });
 
