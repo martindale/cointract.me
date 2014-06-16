@@ -9,14 +9,14 @@ describe('Rating', function() {
   var Rating = require('../../lib/models/rating');
   var rating = null;
 
-  var critic = new mongoose.Types.ObjectId();
-  var userId = new mongoose.Types.ObjectId();
+  var critic = { _id: new mongoose.Types.ObjectId() };
+  var user   = { _id: new mongoose.Types.ObjectId() };
 
   describe('#create', function() {
 
     it('should create a new rating', function(done) {
-      Rating.create({ _id: critic }, {
-        user: userId,
+      Rating.create(critic, {
+        user: user._id,
         score: 8
       }, function(err, result) {
         should.not.exist(err);
