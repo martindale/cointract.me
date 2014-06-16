@@ -36,7 +36,8 @@ Run tests and fire up the server.
 
 ## Creating Certificates
 
-You will need to generate a self-signed SSL certificate to run the application,
-for testing and development purposes.
+You should generate a self-signed SSL certificate to run the application with
+your config's `server.ssl.enabled` set to `true`, for testing and development
+purposes.
 You can do this easily by following
 **[this guide](http://www.akadia.com/services/ssh_test_certificate.html)**.
