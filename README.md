@@ -3,9 +3,11 @@ Cointract.me
 
 *Do work. Track time. Get coins.*
 
+[![Build Status](https://travis-ci.org/gordonwritescode/cointract.me.svg?branch=master)](https://travis-ci.org/gordonwritescode/cointract.me)
+
 Cointract.me is a collaborative task tracking app that allows you to post jobs,
 get hired, track time, and accept bitcoin! Invoices are reconciled using the
-[Insight API](http://insight.is) and payouts may be facilitated using the 
+[Insight API](http://insight.is) and payouts may be facilitated using the
 [BitPay API](https://bitpay.com/api).
 
 ## Quick Setup
