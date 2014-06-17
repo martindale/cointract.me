@@ -34,6 +34,12 @@
       "port": 465
     },
     "bitpay": {
+      "client": {
+        "apiHost": "test.bitpay.com",
+        "apiPort": 443,
+        "forceSSL": true,
+        "keyPassword": ""
+      },
       "secret": "/path/to/bitpay/api.key",
       "pubkey": "/path/to/bitpay/api.pub"
     },
