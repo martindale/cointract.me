@@ -42,7 +42,8 @@
     "request": "~2.36.0",
     "qrcode": "~0.2.10",
     "pkgcloud": "~0.9.5",
-    "mongoose-types": "~1.0.3"
+    "mongoose-types": "~1.0.3",
+    "soop": "~0.1.5"
   },
   "devDependencies": {
     "should": "~4.0.4",
