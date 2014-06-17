@@ -2,8 +2,7 @@
   "env_development": {
     "debug": true,
     "payments": {
-      "enabled": false,
-      "price": 0.01,
+      "price": 0.00,
       "currency": "BTC"
     },
     "server": {
