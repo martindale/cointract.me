@@ -123,14 +123,14 @@ describe('Job', function() {
       });
     });
 
-    it('should publish the job', function(done) {
+    it('should queue the job for publishing', function(done) {
       job.queueForPublishing(start, end, function(err, result) {
         should.not.exist(err);
         should.exist(result);
         result.listing.start.toString().should.equal(start);
         result.listing.end.toString().should.equal(end);
         should.exist(result.listing.activationCode);
-        result.listing.active.should.equal(true);
+        result.listing.active.should.equal(false);
         done();
       });
     });
