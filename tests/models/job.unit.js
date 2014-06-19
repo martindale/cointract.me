@@ -137,6 +137,41 @@ describe('Job', function() {
 
   });
 
+  describe('#publish', function() {
+
+    it('should not publish the job given an invalid status', function(done) {
+      job.publish({
+        status: 'unpaid'
+      }, job.listing.activationCode, function(err, result) {
+        should.exist(err);
+        should.not.exist(result);
+        done();
+      });
+    });
+
+    it('should not publish the job without activation code', function(done) {
+      job.publish({
+        status: 'paid'
+      }, null, function(err, result) {
+        should.exist(err);
+        should.not.exist(result);
+        done();
+      });
+    });
+
+    it('should publish the job given a valid status', function(done) {
+      job.publish({
+        status: 'paid'
+      }, job.listing.activationCode, function(err, result) {
+        should.not.exist(err);
+        should.exist(result);
+        result.listing.active.should.equal(true);
+        done();
+      });
+    });
+
+  });
+
   describe('#getPublishURL', function() {
 
     it('should return a url string for bitpay ipn', function(done) {
