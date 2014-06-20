@@ -31,6 +31,7 @@ html(lang='en')
     script(src='/vendor/scripts/modernizr-2.6.2.min.js')
 
   body
+    include ../partials/header
     block content
 
     script(src='/vendor/scripts/json2.js')
@@ -39,7 +40,7 @@ html(lang='en')
     script(src='/vendor/scripts/jquery-2.0.2.min.js')
     script(src='/vendor/scripts/jquery.mobile.custom.min.js')
     script(src='/vendor/scripts/handlebars-1.1.2.js')
-    script(src='/vendor/scripts/ember.js')
+    //- script(src='/vendor/scripts/ember.js')
     // include gumby followed by UI modules followed by gumby.init
     script(gumby-touch='/vendor/scripts', src='/vendor/scripts/gumby.js')
     script(src='/vendor/scripts/ui/gumby.retina.js')

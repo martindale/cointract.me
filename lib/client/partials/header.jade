@@ -1,0 +1,37 @@
+nav#nav.navbar.metro
+  .row
+    // Toggle for mobile navigation, targeting the ul
+    a.toggle(gumby-trigger='#nav > .row > ul' href='#')
+      i.icon-menu
+    h1.four.columns.logo
+      a(href='/')
+        img(src='', gumby-retina, alt='Cointract.me')
+    ul.eight.columns
+      li.field
+        input.search.input(type='search', placeholder='Search jobs and users')
+      li
+        a(href='/jobs') Browse Jobs
+        div.dropdown
+          ul
+            for category in categories
+              li
+                a(href='/jobs?category=#{category}') #{category}
+      if user
+        - var img = user.get('profile.gravatar')
+        li
+          a(href='/users/#{user.username}')
+            img(src='#{img}')
+            span #{user.username}
+          div.dropdown
+            ul
+              li
+                a(href='#') My Profile
+              li
+                a(href='#') Account Settings
+              li
+                a(href='#') Logout
+      else
+        li
+          a(href='/register') Register
+        li
+          a(href='/login') Login

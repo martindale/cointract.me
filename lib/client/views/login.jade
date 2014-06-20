@@ -1,0 +1,19 @@
+extends ../layouts/app
+
+block content
+  .row
+    .centered.six.columns
+      if error
+        div.danger.alert #{error}
+      form#login(action='/keys', method='POST')
+        ul
+          li.prepend.field
+            span.adjoined
+              i.icon-user
+            input.xwide.text.input(type='text', name='username', placeholder='username')
+          li.prepend.field
+            span.adjoined
+              i.icon-lock
+            input.xwide.password.input(type='password', name='password', placeholder='password')
+        .medium.primary.btn.metro.rounded
+          input(type='submit', value='Login')
